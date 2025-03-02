@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiren's Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #333;
+        }
+        header {
+            background: #1b1b1b;
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu-item {
+            width: 280px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        form input, button {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background: #ff5733;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #c70039;
+        }
+        #reviews blockquote {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #444;
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px auto;
+            width: 60%;
+        }
+        footer {
+            background: #1b1b1b;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hiren's Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://yesbaik.com/wp-content/uploads/2024/01/23-AlooTikkiBurger.jpg" alt="Aloo Tikki Burger">
+                <h3>Aloo Tikki Burger</h3>
+                <p>₹199</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/N00jGNliV0I5CsjcGl6at7bQhtgt8SiioAvEKXdSe2w/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zaW5m/dWxseXNwaWN5LmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/Mi8wNi8yLTEuanBn" alt="Masala Pasta">
+                <h3>Masala Pasta</h3>
+                <p>₹179</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/8-WYZhFK_ODn7zjOZZLlnWVMkkqQY1f33mBm79_-x3k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hdXRo/ZW50aWNyb3lhbC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMTAvcm95YWwt/cmljZS1tYXktMjIw/NDYxLmpwZw" alt="Hyderabadi Biryani">
+                <h3>Hyderabadi Biryani</h3>
+                <p>₹349</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://imgs.search.brave.com/TuMGcMLHYMg3e9CVmheeRWb5y3XVijgrTS3EQQLps-A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y3JhenltYXNhbGFm/b29kLmNvbS93cC1j/b250ZW50L2ltYWdl/cy9MYWxhLUJhYnUt/Q2hhYXQtQmhhbmRh/ci5qcGc" alt="Delhi Chaat">
+                <h3>Delhi Chaat</h3>
+                <p>₹99</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <section id="location">
+        <h2>Find Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.41941608468241!3d37.77492927975943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2a2c5c1%3A0x42d7b3e414a7b8e!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1646212345678!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen></iframe>
+    </section>
+    
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <blockquote>"The best place for authentic Indian flavors!" - Rajesh Kumar</blockquote>
+        <blockquote>"Great food and excellent service!" - Priya Sharma</blockquote>
+        <blockquote>"A true delight for food lovers!" - Aman Verma</blockquote>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Hiren's Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
